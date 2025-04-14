@@ -180,9 +180,9 @@ int* IndexSortB(StudentB* s, const int N) {
 
 void PrintIndexSortedB(StudentB* s, int* I, const int N) {
     cout << "Index Sorted Student List:" << endl;
-    cout << "============================================================================================================" << endl;
-    cout << "| No. | Last Name        | Course | Specialty          | Physics | Math  | Prog. | Num.Methods | Pedagogy  |" << endl;
-    cout << "------------------------------------------------------------------------------------------------------------" << endl;
+    cout << "===========================================================================================================" << endl;
+    cout << "| No. | Last Name        | Course | Specialty          | Physics | Math  | Prog. | Num.Methods | Pedagogy |" << endl;
+    cout << "-----------------------------------------------------------------------------------------------------------" << endl;
     for (int i = 0; i < N; i++) {
         int j = I[i];
         cout << "| " << setw(2) << right << i + 1 << "  ";
@@ -204,11 +204,11 @@ void PrintIndexSortedB(StudentB* s, int* I, const int N) {
         else {
             cout << "| " << setw(6) << right << "-";
             cout << "| " << setw(12) << right << "-";
-            cout << "| " << setw(9) << right << fixed << setprecision(2) << s[j].third.pedagogy;
+            cout << "| " << setw(8) << right << fixed << setprecision(2) << s[j].third.pedagogy;
         }
         cout << " |" << endl;
     }
-    cout << "============================================================================================================" << endl;
+    cout << "===========================================================================================================" << endl;
 }
 
 int BinSearchB(StudentB* s, const int N, const string& lastName, double avg, double thirdGrade, int* I) {
